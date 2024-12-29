@@ -36,14 +36,12 @@
       align-items: center; /* 수직 중앙 */
       margin: 0; /* 여백 제거 */
       padding: 0; /* 패딩 제거 */
-      width: 100%; /* 부모 컨테이너의 크기를 화면 크기로 설정 */
     }
 
     .image-container img {
-      display: block; /* 기본 여백 제거 */
-      width: 100%; /* 화면 크기에 맞게 이미지 크기 설정 */
-      max-width: 1080px; /* 최대 크기 제한 */
+      width: 1080px;
       height: auto; /* 비율 유지 */
+      display: block; /* 기본 여백 제거 */
     }
 
     a {
@@ -54,10 +52,10 @@
       cursor: default; /* 클릭 방지 */
     }
 
-    /* 반응형 디자인 */
+    /* 반응형 디자인 (크기 줄이지 않음) */
     @media (max-width: 1080px) {
       .image-container img {
-        max-width: 100%; /* 작은 화면에서도 크기 유지 */
+        max-width: 100%; /* 이미지 크기 유지 */
       }
     }
   </style>
