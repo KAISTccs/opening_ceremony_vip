@@ -36,10 +36,12 @@
       align-items: center; /* 수직 중앙 */
       margin: 0; /* 여백 제거 */
       padding: 0; /* 패딩 제거 */
+      width: 100%; /* 부모 컨테이너 크기를 유연하게 설정 */
     }
 
     .image-container img {
-      width: 1080px;
+      width: 100%; /* 화면 크기에 맞게 유연하게 설정 */
+      max-width: 1080px; /* 이미지 최대 너비 제한 */
       height: auto; /* 비율 유지 */
       display: block; /* 기본 여백 제거 */
     }
